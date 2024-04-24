@@ -13,7 +13,7 @@
  
   <h4>Tempat Lahir</h4>
   <ul type="none">
-  <li>Tapah</li>
+  <li> Sungai Ambawang Dusun Pancaroba</li>
   </ul>
   <h4>Olah Raga Favorit</h4>
   <ul type="square">
