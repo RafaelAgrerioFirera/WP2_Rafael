@@ -60,8 +60,7 @@ class Dlemas extends CI_Controller
                 'jenis' => $this->input->post('jenis'),
                 'agama' => $this->input->post('agama')
             ];
-
-            $this->load->view('view_data_dlemas', $data);
+        $this->load->view('view_data_dlemas', $data);
         }
     }
 }
