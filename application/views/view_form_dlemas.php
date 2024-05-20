@@ -32,8 +32,8 @@ method="post">
                 <th>NIM</th>
                 <td>:</td>
                 <td>
-                    <input type="text" name="nis" id="nis" class="<?= form_error('nis') ? 'invalid' : '' ?>"
-                            placeholder="isikan NIM Anda" value="<?= set_value('nis') ?>" />
+                    <input type="text" name="nim" id="nim" class="<?= form_error('nim') ? 'invalid' : '' ?>"
+                            placeholder="isikan NIM Anda" value="<?= set_value('nim') ?>" />
                         <div class="invalid-feedback"><?= form_error('nim') ?></div>
                 </td>
             </tr>
@@ -95,6 +95,7 @@ method="post">
                         <option value="Budha">Budha</option>
                         <option value="Hindu">Hindu</option>
                         <option value="Khonghucu">Khonghucu</option>
+                        <option value="Animisme">Animisme</option>
                     </select>
                     <div class="invalid-feedback"><?= form_error('agama') ?></div>
                 </td>

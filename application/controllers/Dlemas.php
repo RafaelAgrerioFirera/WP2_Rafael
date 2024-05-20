@@ -9,18 +9,18 @@ class Dlemas extends CI_Controller
 
     public function cetak()
     {
-        $this->form_validation->set_rules('nama', 'Nama Siswa', 'required|min_length[3]', [
-            'required' => 'Nama Siswa Wajib diisi',
-            'min_lenght' => 'Nama Siswa terlalu pendek'
+        $this->form_validation->set_rules('nama', 'Nama Mahasiswa', 'required|min_length[3]', [
+            'required' => 'Nama Mahasiswa Wajib diisi',
+            'min_lenght' => 'Nama Mahasiswa terlalu pendek'
         ]);
 
-        $this->form_validation->set_rules('nis', 'NIS', 'required|min_length[3]', [
-            'required' => 'NIS Wajib diisi',
-            'min_lenght' => 'NIS terlalu pendek'
+        $this->form_validation->set_rules('nim', 'NIM', 'required|min_length[3]', [
+            'required' => 'NIM Wajib diisi',
+            'min_lenght' => 'NIM terlalu pendek'
         ]);
 
         $this->form_validation->set_rules('kelas', 'Kelas', 'required|min_length[3]', [
-            'required' => 'Kelas Wajb diisi',
+            'required' => 'Kelas Wajib diisi',
             'min_lenght' => 'Kelas terlalu pendek'
         ]);
 
@@ -52,7 +52,7 @@ class Dlemas extends CI_Controller
         } else {
             $data = [
                 'nama' => $this->input->post('nama'),
-                'nis' => $this->input->post('nis'),
+                'nim' => $this->input->post('nim'),
                 'kelas' => $this->input->post('kelas'),
                 'tanggal' => $this->input->post('tanggal'),
                 'tempat' => $this->input->post('tempat'),

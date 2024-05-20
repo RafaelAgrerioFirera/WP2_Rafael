@@ -1,10 +1,10 @@
 <html>
 
 <head>
-    <title>Tampil Data Siswa</title>
+    <title>Tampil Data Mahasiswa</title>
 </head>
 
-<body>
+<body style="background-color: grey;">
     <center>
         <table>
             <tr>
@@ -25,10 +25,10 @@
                 </td>
             </tr>
             <tr>
-                <td>NIS</td>
+                <td>NIM</td>
                 <td>:</td>
                 <td>
-                    <?= $nis; ?>
+                    <?= $nim; ?>
                 </td>
             </tr>
             <tr>
@@ -75,7 +75,7 @@
             </tr>
             <tr>
                 <td colspan="3" align="center">
-                    <a href="<?= base_url('dlemas'); ?>">Kembali</a>
+                    <a href="<?= base_url('dlemas'); ?>">Back</a>
                 </td>
             </tr>
         </table>
