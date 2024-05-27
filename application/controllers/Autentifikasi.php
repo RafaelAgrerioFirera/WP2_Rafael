@@ -25,7 +25,7 @@ class Autentifikasi extends CI_Controller
             $this->load->view('autentifikasi/login');
             $this->load->view('templates/aute_footer');
         } else {
-            $this->_login();
+            $this-> _login();
         }
     }
 
@@ -34,7 +34,7 @@ class Autentifikasi extends CI_Controller
         $email = htmlspecialchars($this->input->post('email', true));
         $password = $this->input->post('password', true);
 
-        $user = $this->ModelUser->cekData(['email' => $email])->row_array();
+        $user = $this->ModelUser->cekdata(['email' => $email])->row_array();
 
         //jika usernya ada
         if ($user) {
